@@ -1,0 +1,11 @@
+params:
+  server.insecure: true
+
+server:
+  ingress:
+    enabled: true
+    ingressClassName: "nginx"
+    hosts:
+      - argocd.home.local
+    paths:
+      - /
